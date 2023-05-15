@@ -46,7 +46,7 @@ module.exports = {
       allowUnlimitedContractSize: true,
     },
     goerli: {
-      url: `https://goerli.infura.io/v3/c2ba7cdd62a843f48c8db9cd71b2ab09` || "",
+      url: `https://goerli.infura.io/v3/${process.env.GOERLI}` || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
